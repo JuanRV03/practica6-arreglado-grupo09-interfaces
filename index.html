@@ -17,7 +17,14 @@
       <div class="content-container">
         <div class="bar">
           <div class="bl" role="navigation" aria-label="Enlaces institucionales">Gobierno · Ciudadanía · Cultura · Trámites · Otros temas</div>
-          <div class="br"><button type="button" class="tam" onclick="zoom(1)">A+</button> <button type="button" class="tam" onclick="zoom(-1)">A-</button></div>
+          <div class="br">
+            <button type="button" class="tam" onclick="zoom(1)" aria-label="Acercar: aumentar el tamaño del texto" title="Acercar">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6M7.5 10.5h6"/></svg>
+            </button>
+            <button type="button" class="tam" onclick="zoom(-1)" aria-label="Alejar: reducir el tamaño del texto" title="Alejar">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -164,7 +171,7 @@
     </div>
   </footer>
 
-  <div class="ck" id="ck">Usamos cookies para mejorar tu experiencia. <button type="button" class="ok" onclick="document.getElementById('ck').style.display='none'">Aceptar</button></div>
+  <div class="ck" id="ck">Usamos cookies para mejorar tu experiencia. <button type="button" class="ok" onclick="document.getElementById('ck').style.display='none'">Aceptar</button> <button type="button" class="no" onclick="document.getElementById('ck').style.display='none'">Denegar</button></div>
   <button type="button" class="top" id="top" onclick="window.scrollTo(0,0)" aria-label="Volver arriba">↑</button>
 </div>
 

@@ -53,12 +53,17 @@ body {
 
 .tam { 
   cursor: pointer; 
-  padding: 4px 10px; 
+  width: 36px;
+  height: 34px;
+  padding: 5px; 
   color: #ffffff; 
   background: #2d6a4f; 
   border: 1px solid #ffffff; 
   border-radius: 4px; 
   font-weight: bold; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cab { 
@@ -271,7 +276,7 @@ a:hover { color: #2d6a4f; }
   border-top: 4px solid #fca311; 
   text-align: center; 
 }
-.ok { 
+.ok, .no { 
   background: #2d6a4f; 
   color: #ffffff; 
   padding: 8px 18px; 
@@ -281,6 +286,7 @@ a:hover { color: #2d6a4f; }
   font-weight: bold; 
   border-radius: 4px; 
 }
+.no { background: #1b4332; }
 
 .top { 
   display: none; 
